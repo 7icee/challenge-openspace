@@ -2,12 +2,13 @@ import pandas as pd
 import openpyxl
 
 def Retrieve_names(file_path: str) -> list:
-    """"""
+    """Retrieves a list of names from a excel file"""
     df = pd.read_excel(file_path)
     names = df["Names"].tolist()
     return names
 
 def Create_excel(seated_names: list) -> None:
+    """Create a excel based on a list"""
 
     workbook = openpyxl.Workbook()
     sheet = workbook.active

@@ -1,3 +1,4 @@
+"""Only for testing"""
 
 from utils.table import Seat, Table
 from utils.openspace import Openspace
@@ -16,7 +17,6 @@ def test_openspace():
 
 seated_names = test_openspace()
 
-print(seated_names)
 
 
 
